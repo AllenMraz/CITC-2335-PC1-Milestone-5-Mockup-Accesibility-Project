@@ -4,8 +4,9 @@ using System.Text;
 
 namespace Milestone_5_Mockup
 {
-    internal class DatabaseItem
+    public class DatabaseItem
     {
+        public int ItemId { get; set; }
         private string ItemName { get; set; }
         private string TextbookOrSoftware { get; set; }
         private string Publisher { get; set; }
