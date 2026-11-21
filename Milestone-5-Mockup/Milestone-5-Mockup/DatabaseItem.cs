@@ -6,19 +6,19 @@ namespace Milestone_5_Mockup
 {
     internal class DatabaseItem
     {
-        private string ItemName { get; set; }
-        private string TextbookOrSoftware { get; set; }
-        private string Publisher { get; set; }
-        private string VpatStatus { get; set; }
-        private string ClassRequesting { get; set; }
-        private string? IndividualRequesting { get; set; }
-        private string? VpatRequestDate { get; set; }
-        private string? VpatLink { get; set; }
-        private string VpatOutreachDate { get; set; }
-        private string OutsideRiskAssessment { get; set; }
-        private string InternalRiskAssessment { get; set; }
-        private string? FinalApproval { get; set; }
-        private string AdditionalNotes { get; set; }
+        internal string ItemName { get; set; }
+        internal string TextbookOrSoftware { get; set; }
+        internal string Publisher { get; set; }
+        internal string VpatStatus { get; set; }
+        internal string ClassRequesting { get; set; }
+        internal string? IndividualRequesting { get; set; }
+        internal string? VpatRequestDate { get; set; }
+        internal string? VpatLink { get; set; }
+        internal string VpatOutreachDate { get; set; }
+        internal string OutsideRiskAssessment { get; set; }
+        internal string InternalRiskAssessment { get; set; }
+        internal string? FinalApproval { get; set; }
+        internal string AdditionalNotes { get; set; }
 
     }
 }
