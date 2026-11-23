@@ -28,12 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
+            lbx_itemDisplay = new ListBox();
+            SuspendLayout();
+            // 
+            // lbx_itemDisplay
+            // 
+            lbx_itemDisplay.FormattingEnabled = true;
+            lbx_itemDisplay.Location = new Point(105, 92);
+            lbx_itemDisplay.Name = "lbx_itemDisplay";
+            lbx_itemDisplay.Size = new Size(556, 179);
+            lbx_itemDisplay.TabIndex = 0;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(lbx_itemDisplay);
+            Name = "Form1";
             Text = "Form1";
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private ListBox lbx_itemDisplay;
     }
 }

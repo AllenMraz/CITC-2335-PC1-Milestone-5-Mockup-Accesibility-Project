@@ -11,7 +11,7 @@ namespace Milestone_5_Mockup
         // since we're not doing a database though I'm assuming we're doing just a text file to
         // represent the database.
         
-        public static List<DatabaseItem> GetIncidents()
+        public static List<DatabaseItem> GetObjects()
         {
 
             using FileStream stream = new(Path, FileMode.Open, FileAccess.Read);
@@ -29,19 +29,21 @@ namespace Milestone_5_Mockup
                     // I'm assuming the database file will be delimited by pipes | in the same
                     // order as listed in the database item class.
 
-                    ItemName = columns[0],
-                    TextbookOrSoftware = columns[1],
-                    Publisher = columns[2],
-                    VpatStatus = columns[3],
-                    ClassRequesting = columns[4],
-                    IndividualRequesting = columns[5],
-                    VpatRequestDate = columns[6],
-                    VpatLink = columns[7],
-                    VpatOutreachDate = columns[8],
-                    OutsideRiskAssessment = columns[9],
-                    InternalRiskAssessment = columns[10],
-                    FinalApproval = columns[11],
-                    AdditionalNotes = columns[12]
+
+                    ItemId = int.Parse(columns[0]),
+                    ItemName = columns[1],
+                    TextbookOrSoftware = columns[2],
+                    Publisher = columns[3],
+                    VpatStatus = columns[4],
+                    ClassRequesting = columns[5],
+                    IndividualRequesting = columns[6],
+                    VpatRequestDate = columns[7],
+                    VpatLink = columns[8],
+                    VpatOutreachDate = columns[9],
+                    OutsideRiskAssessment = columns[10],
+                    InternalRiskAssessment = columns[11],
+                    FinalApproval = columns[12],
+                    AdditionalNotes = columns[13]
                 };
 
                 DatabaseItems.Add(item);
