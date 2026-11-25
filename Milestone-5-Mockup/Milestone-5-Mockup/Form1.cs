@@ -16,7 +16,7 @@ namespace Milestone_5_Mockup
 
         // I didn't finish this, but this is the displaycurrentitems method that will happen
         // upon initialization.
-        
+
         // It would also need to run every time the search bar is updated, but I haven't
         // actually added that functionality. I could make it work with that, but it would take time.
         public void displayCurrentItems()
@@ -47,14 +47,34 @@ namespace Milestone_5_Mockup
 
                 // commented out because this hasn't been updated for the project yet.
 
-                    //lbx_itemDisplay.Items.Add(t.Name.PadRight(15) +
-                    //                        t.ProductCode.PadRight(10) +
-                    //                        t.DateOpened.PadRight(15) +
-                    //                        t.DateClosed.PadRight(15) +
-                    //                        t.Title);
-                    //firstName = t.Name;
-                
+                //lbx_itemDisplay.Items.Add(t.Name.PadRight(15) +
+                //                        t.ProductCode.PadRight(10) +
+                //                        t.DateOpened.PadRight(15) +
+                //                        t.DateClosed.PadRight(15) +
+                //                        t.Title);
+                //firstName = t.Name;
+
             }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click_2(object sender, EventArgs e)
+        {
+
         }
     }
 }
