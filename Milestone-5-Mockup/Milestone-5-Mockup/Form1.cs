@@ -5,7 +5,11 @@ namespace Milestone_5_Mockup
         public Form1()
         {
             InitializeComponent();
+            displayCurrentItems();
         }
+
+        // I moved the list outside of the
+        List<DatabaseItem> accessibleItems = ObjectListFromFilePath.GetObjects();
 
 
 
@@ -14,14 +18,9 @@ namespace Milestone_5_Mockup
 
         }
 
-        // I didn't finish this, but this is the displaycurrentitems method that will happen
-        // upon initialization.
-
-        // It would also need to run every time the search bar is updated, but I haven't
-        // actually added that functionality. I could make it work with that, but it would take time.
         public void displayCurrentItems()
         {
-            var accessibleItems = ObjectListFromFilePath.GetObjects();
+            
 
             var results = from i in accessibleItems
                           orderby i.ItemId

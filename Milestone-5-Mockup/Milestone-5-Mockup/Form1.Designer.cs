@@ -32,25 +32,27 @@
             SignInBtn = new Button();
             label1 = new Label();
             Search = new TextBox();
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
+            btn_createItem = new Button();
+            btn_modifyItem = new Button();
+            btn_viewItem = new Button();
             button4 = new Button();
             SuspendLayout();
             // 
             // lbx_itemDisplay
             // 
             lbx_itemDisplay.FormattingEnabled = true;
-            lbx_itemDisplay.Location = new Point(12, 86);
+            lbx_itemDisplay.Location = new Point(17, 143);
+            lbx_itemDisplay.Margin = new Padding(4, 5, 4, 5);
             lbx_itemDisplay.Name = "lbx_itemDisplay";
-            lbx_itemDisplay.Size = new Size(536, 124);
+            lbx_itemDisplay.Size = new Size(764, 204);
             lbx_itemDisplay.TabIndex = 0;
             // 
             // SignInBtn
             // 
-            SignInBtn.Location = new Point(12, 29);
+            SignInBtn.Location = new Point(17, 48);
+            SignInBtn.Margin = new Padding(4, 5, 4, 5);
             SignInBtn.Name = "SignInBtn";
-            SignInBtn.Size = new Size(75, 23);
+            SignInBtn.Size = new Size(107, 38);
             SignInBtn.TabIndex = 1;
             SignInBtn.Text = "Sign In";
             SignInBtn.UseVisualStyleBackColor = true;
@@ -60,72 +62,77 @@
             // 
             label1.AutoSize = true;
             label1.BorderStyle = BorderStyle.FixedSingle;
-            label1.Location = new Point(12, 66);
+            label1.Location = new Point(17, 110);
+            label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Padding = new Padding(200, 0, 200, 0);
-            label1.Size = new Size(536, 17);
+            label1.Padding = new Padding(286, 0, 286, 0);
+            label1.Size = new Size(775, 27);
             label1.TabIndex = 2;
             label1.Text = "Item Accessibility Status";
             label1.Click += label1_Click;
             // 
             // Search
             // 
-            Search.Location = new Point(395, 29);
+            Search.Location = new Point(564, 48);
+            Search.Margin = new Padding(4, 5, 4, 5);
             Search.Name = "Search";
-            Search.Size = new Size(153, 23);
+            Search.Size = new Size(217, 31);
             Search.TabIndex = 3;
             // 
-            // button1
+            // btn_createItem
             // 
-            button1.Location = new Point(12, 216);
-            button1.Name = "button1";
-            button1.Size = new Size(108, 23);
-            button1.TabIndex = 4;
-            button1.Text = "Create Item";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click_2;
+            btn_createItem.Location = new Point(17, 360);
+            btn_createItem.Margin = new Padding(4, 5, 4, 5);
+            btn_createItem.Name = "btn_createItem";
+            btn_createItem.Size = new Size(154, 38);
+            btn_createItem.TabIndex = 4;
+            btn_createItem.Text = "Create Item";
+            btn_createItem.UseVisualStyleBackColor = true;
+            btn_createItem.Click += button1_Click_2;
             // 
-            // button2
+            // btn_modifyItem
             // 
-            button2.Location = new Point(155, 216);
-            button2.Name = "button2";
-            button2.Size = new Size(108, 23);
-            button2.TabIndex = 5;
-            button2.Text = "Modify Item";
-            button2.UseVisualStyleBackColor = true;
+            btn_modifyItem.Location = new Point(221, 360);
+            btn_modifyItem.Margin = new Padding(4, 5, 4, 5);
+            btn_modifyItem.Name = "btn_modifyItem";
+            btn_modifyItem.Size = new Size(154, 38);
+            btn_modifyItem.TabIndex = 5;
+            btn_modifyItem.Text = "Modify Item";
+            btn_modifyItem.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btn_viewItem
             // 
-            button3.Location = new Point(298, 216);
-            button3.Name = "button3";
-            button3.Size = new Size(108, 23);
-            button3.TabIndex = 6;
-            button3.Text = "View Item Details";
-            button3.UseVisualStyleBackColor = true;
+            btn_viewItem.Location = new Point(426, 360);
+            btn_viewItem.Margin = new Padding(4, 5, 4, 5);
+            btn_viewItem.Name = "btn_viewItem";
+            btn_viewItem.Size = new Size(154, 38);
+            btn_viewItem.TabIndex = 6;
+            btn_viewItem.Text = "View Item Details";
+            btn_viewItem.UseVisualStyleBackColor = true;
             // 
             // button4
             // 
-            button4.Location = new Point(440, 216);
+            button4.Location = new Point(629, 360);
+            button4.Margin = new Padding(4, 5, 4, 5);
             button4.Name = "button4";
-            button4.Size = new Size(108, 23);
+            button4.Size = new Size(154, 38);
             button4.TabIndex = 7;
             button4.Text = "Main Menu";
             button4.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(560, 270);
+            ClientSize = new Size(800, 450);
             Controls.Add(button4);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(btn_viewItem);
+            Controls.Add(btn_modifyItem);
+            Controls.Add(btn_createItem);
             Controls.Add(Search);
             Controls.Add(label1);
             Controls.Add(SignInBtn);
             Controls.Add(lbx_itemDisplay);
-            Margin = new Padding(2, 2, 2, 2);
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;
@@ -139,9 +146,9 @@
         private Button SignInBtn;
         private Label label1;
         private TextBox Search;
-        private Button button1;
-        private Button button2;
-        private Button button3;
+        private Button btn_createItem;
+        private Button btn_modifyItem;
+        private Button btn_viewItem;
         private Button button4;
     }
 }
