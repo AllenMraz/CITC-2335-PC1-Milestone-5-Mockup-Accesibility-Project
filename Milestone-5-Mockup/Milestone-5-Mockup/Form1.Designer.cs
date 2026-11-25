@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            listBox1 = new ListBox();
+            lbx_itemDisplay = new ListBox();
             SignInBtn = new Button();
             label1 = new Label();
             Search = new TextBox();
@@ -38,13 +38,13 @@
             button4 = new Button();
             SuspendLayout();
             // 
-            // listBox1
+            // lbx_itemDisplay
             // 
-            listBox1.FormattingEnabled = true;
-            listBox1.Location = new Point(12, 86);
-            listBox1.Name = "listBox1";
-            listBox1.Size = new Size(536, 124);
-            listBox1.TabIndex = 0;
+            lbx_itemDisplay.FormattingEnabled = true;
+            lbx_itemDisplay.Location = new Point(12, 86);
+            lbx_itemDisplay.Name = "lbx_itemDisplay";
+            lbx_itemDisplay.Size = new Size(536, 124);
+            lbx_itemDisplay.TabIndex = 0;
             // 
             // SignInBtn
             // 
@@ -124,7 +124,7 @@
             Controls.Add(Search);
             Controls.Add(label1);
             Controls.Add(SignInBtn);
-            Controls.Add(listBox1);
+            Controls.Add(lbx_itemDisplay);
             Margin = new Padding(2, 2, 2, 2);
             Name = "Form1";
             Text = "Form1";
@@ -135,7 +135,7 @@
 
         #endregion
 
-        private ListBox listBox1;
+        private ListBox lbx_itemDisplay;
         private Button SignInBtn;
         private Label label1;
         private TextBox Search;
