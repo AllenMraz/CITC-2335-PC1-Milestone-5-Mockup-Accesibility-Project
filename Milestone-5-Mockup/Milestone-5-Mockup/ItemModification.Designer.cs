@@ -101,7 +101,7 @@
             // 
             // textBox6
             // 
-            textBox6.Location = new Point(294, 524);
+            textBox6.Location = new Point(27, 523);
             textBox6.Name = "textBox6";
             textBox6.Size = new Size(150, 31);
             textBox6.TabIndex = 7;
@@ -156,7 +156,7 @@
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(294, 496);
+            label7.Location = new Point(27, 495);
             label7.Name = "label7";
             label7.Size = new Size(152, 25);
             label7.TabIndex = 13;
@@ -252,7 +252,7 @@
             // label13
             // 
             label13.AutoSize = true;
-            label13.Location = new Point(27, 395);
+            label13.Location = new Point(27, 293);
             label13.Name = "label13";
             label13.Size = new Size(146, 25);
             label13.TabIndex = 25;
@@ -260,7 +260,7 @@
             // 
             // textBox12
             // 
-            textBox12.Location = new Point(27, 423);
+            textBox12.Location = new Point(27, 321);
             textBox12.Multiline = true;
             textBox12.Name = "textBox12";
             textBox12.Size = new Size(236, 132);
@@ -269,7 +269,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(686, 521);
+            button1.Location = new Point(482, 520);
             button1.Name = "button1";
             button1.Size = new Size(166, 34);
             button1.TabIndex = 26;
@@ -278,7 +278,7 @@
             // 
             // button2
             // 
-            button2.Location = new Point(498, 522);
+            button2.Location = new Point(294, 521);
             button2.Name = "button2";
             button2.Size = new Size(166, 34);
             button2.TabIndex = 27;
@@ -310,11 +310,11 @@
             label18.Size = new Size(0, 25);
             label18.TabIndex = 34;
             // 
-            // Form1
+            // ItemModification
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(865, 585);
+            ClientSize = new Size(735, 585);
             Controls.Add(label18);
             Controls.Add(label1);
             Controls.Add(textBox13);
@@ -344,7 +344,7 @@
             Controls.Add(textBox3);
             Controls.Add(textBox2);
             Controls.Add(textBox1);
-            Name = "Form1";
+            Name = "ItemModification";
             Text = "Item Modification";
             ResumeLayout(false);
             PerformLayout();

@@ -26,8 +26,12 @@ namespace Milestone_5_Mockup
                           orderby i.ItemId
                           select new
                           {
-                              i.ItemId,
+                              
                               i.ItemName,
+                              i.TextbookOrSoftware,
+                              i.ItemVersion,
+                              i.VpatStatus,
+                              i.FinalApproval
 
                           };
 
@@ -35,25 +39,33 @@ namespace Milestone_5_Mockup
 
             // this is a test for later
 
-            lbx_itemDisplay.Items.Add("First".PadRight(15) +
-                                    "2nd".PadRight(10) +
-                                    "3rd".PadRight(15) +
-                                    "4th".PadRight(15) +
-                                    "5th");
+            lbx_itemDisplay.Items.Add("Item Name".PadRight(20) +
+                                    "Textbook/Software".PadRight(20) +
+                                    "Version Num".PadRight(5) +
+                                    "VPAT/WCAG".PadRight(15) +
+                                    "Approval");
 
             foreach (var t in results)
             {
 
                 // commented out because this hasn't been updated for the project yet.
 
-                //lbx_itemDisplay.Items.Add(t.Name.PadRight(15) +
-                //                        t.ProductCode.PadRight(10) +
-                //                        t.DateOpened.PadRight(15) +
-                //                        t.DateClosed.PadRight(15) +
-                //                        t.Title);
-                //firstName = t.Name;
+                lbx_itemDisplay.Items.Add(Fit(t.ItemName, 20) +
+                                            Fit(t.TextbookOrSoftware, 20) +
+                                            Fit(t.ItemVersion, 5) +
+                                            Fit(t.VpatStatus, 15) +
+                                            t.FinalApproval);
+
 
             }
+        }
+
+        private static string Fit(string text, int width)
+        {
+            text = text ?? "";
+            return text.Length > width
+                ? text.Substring(0, width)
+                : text.PadRight(width);
         }
 
         private void Form1_Load(object sender, EventArgs e)

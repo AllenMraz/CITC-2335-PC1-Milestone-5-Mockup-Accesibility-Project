@@ -7,9 +7,9 @@ namespace Milestone_5_Mockup
     internal class ObjectListFromFilePath
     {
 
-        static string Path = "sample"; // This needs to be changed to be the path to the list file,
-        // since we're not doing a database though I'm assuming we're doing just a text file to
-        // represent the database.
+        static string Path = "..\\..\\..\\..\\sample_items.txt"; 
+
+        //I made a sample filepath for this. This is just so we can start from the ground running.
         
         public static List<DatabaseItem> GetObjects()
         {
@@ -43,7 +43,8 @@ namespace Milestone_5_Mockup
                     OutsideRiskAssessment = columns[10],
                     InternalRiskAssessment = columns[11],
                     FinalApproval = columns[12],
-                    AdditionalNotes = columns[13]
+                    AdditionalNotes = columns[13],
+                    ItemVersion = columns[14],
                 };
 
                 DatabaseItems.Add(item);

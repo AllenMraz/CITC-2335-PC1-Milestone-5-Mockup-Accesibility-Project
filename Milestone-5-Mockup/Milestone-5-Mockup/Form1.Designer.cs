@@ -40,11 +40,12 @@
             // 
             // lbx_itemDisplay
             // 
+            lbx_itemDisplay.Font = new Font("Consolas", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lbx_itemDisplay.FormattingEnabled = true;
             lbx_itemDisplay.Location = new Point(17, 143);
             lbx_itemDisplay.Margin = new Padding(4, 5, 4, 5);
             lbx_itemDisplay.Name = "lbx_itemDisplay";
-            lbx_itemDisplay.Size = new Size(764, 204);
+            lbx_itemDisplay.Size = new Size(764, 202);
             lbx_itemDisplay.TabIndex = 0;
             // 
             // SignInBtn
